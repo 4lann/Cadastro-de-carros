@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <script src="./assets/js/cadastrar.js/cadastrar.js" defer></script>
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <title>Exemplo</title>
+        </head>
+        <body>
+                
+            <nav>
+                <div class="nav-wrapper brown">
+                <a href="#" class="brand-logo">Despachante A.B Assessoria</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"><a href="cadastrar.html">criar cadastro</a></li>
+                    <li><a href="index.html">cadastros</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+                </div>
+            </nav>
+
+        <main class="container">
+
+                <h4>Cadastrar modelos <p></p><p></p></h4>
+                      <div> 
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input name="group1" type="radio" checked />                             
+                              <span><i class="small material-icons">motorcycle  moto</i></span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input name="group1" type="radio" />
+                              <span><span><i class="small material-icons">drive_eta</i></span></span>
+                            </label>
+                          </p>
+                          
+                        </form>
+
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <input id="Nome" type="text" class="validate" minlength="10">
+                            <label for="Nome">Nome completo</label>
+                            <span class="helper-text" data-error="Nome muito curto. Preencha pelo menos com 6 caracteres." data-success="Nome inválido">Digite o nome do Despachante</span>
+                          
+                          </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="input-field col s12">
+                              <input id="modelo" type="text" class="validate" minlength="6">
+                              <label for="modelo">Modelo</label>
+                              <span class="helper-text" data-error="Modelo muito curto. Preencha pelo menos com 6 caracteres." data-success="Modelo válido">Digite o modelo moto/carro</span>
+                            
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <textarea id="Placa" class="materialize-textarea"></textarea>
+                              <label for="Placa">Placa</label>
+                              <span class="helper-text" data-error="Titulo muito curto. Preencha pelo menos com 3 caracteres." data-success="Placa válida">Digite a placa do modelo</span>
+
+                            </div>
+                          </div>
+
+
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="ano" type="number" class="validate" min="1000" max="9999">
+                              <label for="ano">Ano</label>
+                              <span class="helper-text" data-error="ano inválido." data-success="">Digite o ano</span>
+
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col">
+                                <a href="index.html"class="btn red">Cancelar</a>
+                            </div>
+        
+                            <div class="col">
+                                <button id="botao-cadastrar"class ="btn"></button>Salvar</button>
+                            </div>
+                        </div>
+                      </div>
+
+
+
+                      
+
+                     
+                </div>
+
+
+        </main>
+
+
+        </body>
+</html>
+
+
+
